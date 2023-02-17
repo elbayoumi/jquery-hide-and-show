@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+
+.container{
+    text-align: center;
+    align-items: center;
+    font-family: 'Cairo', sans-serif;
+    margin-top: 10px;
+}
+nav {display: flex;
+    padding-bottom: 25px;
+    margin-top: 10px;
+width: 100%;
+justify-content: center;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    width: 80%;
+    background-color: rgba(0, 255, 255, 0.911);
+    border-radius: 12px;
+    /* box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0); */
+    /* color: rgba(0, 0, 0, 0.658); */
+
+}
+ul{
+    list-style: none;
+}
+a {
+    color: rgb(88, 88, 88);
+    text-decoration: none;
+    font-weight: bold;
+}
+nav li {
+    display: inline-block;
+    margin: 0;
+    padding-left: 7px;
+    border-bottom: 1px solid rgba(0, 255, 255, 0.596);
+    border-left:1px solid rgba(0, 255, 255, 0.596); ;
+    border-radius: 10px;
+
+}
+nav li:hover {
+    background-color: rgb(5, 255, 255);
+    border-bottom: 1px solid rgba(255, 0, 0, 0.568);
+    color: #000;
+border-left:1px solid rgba(255, 0, 0, 0.568); ;
+transform: scale(1.05);
+}
+a:hover{
+    color:black
+}
+pre {
+    font-size: inherit;
+    font-weight: inherit;
+}
+#panel, #flip {
+    padding: 5px;
+    text-align: center;
+    background-color: #e5eecc;
+    border: solid 1px #c3c3c3;
+  }
+  
+  #panel {
+    padding: 50px;
+    display: none;
+  }
+  h1-h1{
+    display: block;
+    font-size: bold;
+    font-weight: bolder ;
+  }
+#Animation
+  ,#Tutorial
+  ,#Introduction
+  ,#Started
+  ,#Syntax
+  ,#HideShow
+  ,#Fading
+  ,#Sliding
+  ,#Stop
+  ,#iframe {
+    margin-top: 55px;
+  }

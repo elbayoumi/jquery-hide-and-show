@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Jquery</title>
+    <script src="./jquery-3.6.1.min.js"></script>
+    <link rel="icon" href="./W3Schools_logo.svg.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a class="Tutorial" href="#Tutorial">Tutorial</a></li>
+            <li><a class="Introduction" href="#Introduction">Introduction</a></li>
+            <li><a class="Started" href="#Started">Get Started </a></li>
+            <li><a class="Syntax" href="#Syntax">Syntax</a></li>
+            <li><a class="HideShow" href="#HideShow">Hide and Show</a></li>
+            <li><a class="Fading" href="#Fading">Fading</a></li>
+            <li><a class="Sliding" href="#Sliding">Sliding</a></li>
+            <li><a class="Animation" href="#Animation">Animation</a></li>
+            <li><a class="Stop" href="#Stop">Stop()</a></li>
+            <li><a class="remove" href="#remove">remove()&&empty()</a></li>
+            <li><a class="iframe" href="#iframe">iframe</a></li>
+
+        </ul>
+    </nav>
+    <div class="container">
+        <div id="Tutorial">
+            <div>
+                <h1-h1>Learning Jquery</h1-h1>
+                <p>jQuery is a JavaScript Library.
+
+                    jQuery greatly simplifies JavaScript programming.
+
+                    jQuery is easy to learn.</p>
+            </div>
+            <div>
+                <h1-h1>Examples in Each Chapter</h1-h1>
+                <p>
+
+                    With our online editor, you can edit the code, and click on a button to view the result.
+                </p>
+                <div class="example">
+                    <h1-h1> Example</h1-h1>
+                    <p class="code">
+
+                        $(document).ready(function(){<br>
+                        $("p").click(function(){<br>
+                        $(this).hide();<br>
+                        });<br>
+                        });<br>
+                    </p>
+                    <a href="https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_hide" target="_blank">
+                        <button>try it yourself</button></a> <button id="code">hide</button><button
+                        id="codeshow">show</button>
+                </div>
+                <p>
+                    Click on the "Try it Yourself" button to see how it works.
+                </p>
+            </div>
+        </div>
+        <div id="Introduction">
+            <p> The purpose of jQuery is to make it much easier to use JavaScript on your website.</p>
+            <div class="before">
+                <h1-h1> What You Should Already Know</h1-h1>
+                <p> Before you start studying jQuery, you should have a basic knowledge of:</p>
+                <ul>
+                    <a href="https://www.w3schools.com/html/default.asp" target="_blank">
+                        <li>HTML</li>
+                    </a>
+                    <a href="https://www.w3schools.com/css/default.asp" target="_blank">
+                        <li>CSS</li>
+                    </a>
+                    <a href="https://www.w3schools.com/js/default.asp" target="_blank">
+                        <li>JavaScript</li>
+                    </a>
+                </ul>
+                <p>If you want to study these subjects first, find the tutorials on our Home page.</p>
+            </div>
+
+            <div class="whats">
+                <h1-h1> What is jQuery?</h1-h1>
+                <p>
+                    jQuery is a lightweight, "write less, do more", JavaScript library. <br><br>
+
+                    The purpose of jQuery is to make it much easier to use JavaScript on your website. <br><br>
+
+                    jQuery takes a lot of common tasks that require many lines of JavaScript code to accomplish, and
+                    wraps them into methods that you can call with a single line of code.
+                    <br><br>
+                    jQuery also simplifies a lot of the complicated things from JavaScript, like AJAX calls and DOM
+                    manipulation.
+                    <br><br>
+                    The jQuery library contains the following features:
+                </p><br>
+                <ul>
+                    <li> HTML/DOM manipulation
+                    </li>
+                    <li> CSS manipulation
+                    </li>
+                    <li> HTML event methods
+                    </li>
+                    <li> Effects and animations
+                    </li>
+                    <li>AJAX</li>
+                    <li>Utilities</li>
+                </ul>
+
+
+                Tip: In addition, jQuery has plugins for almost any task out there.
+            </div>
+            <div class="whay"></div>
+            <h1-h1> Why jQuery?</h1-h1>
+            <p>
+                There are lots of other JavaScript libraries out there, but jQuery is probably the most popular, and
+                also the most extendable.
+            </p>
+            <p>
+                Many of the biggest companies on the Web use jQuery, such as:
+            </p>
+            <ul>
+                <li>Google</li>
+                <li>Microsoft</li>
+                <li>IBM</li>
+                <li>Netflix</li>
+            </ul>
+        </div>
+        <div class="start" id="Started">
+            <h1-h1> jQuery Get Started</h1-h1>
+            Adding jQuery to Your Web Pages <br><br>
+            There are several ways to start using jQuery on your web site. You can:<br><br>
+
+            Download the jQuery library from jQuery.com<br><br>
+            Include jQuery from a CDN, like Google<br><br>
+            Downloading jQuery<br><br>
+            There are two versions of jQuery available for downloading:<br><br>
+
+            Production version - this is for your live website because it has been minified and compressed
+            Development version - this is for testing and development (uncompressed and readable code)
+            Both versions can be downloaded from jQuery.com.<br><br>
+
+            The jQuery library is a single JavaScript file, and you reference it with the HTML <span>
+                << /span><span>script</span><span>></span> tag (notice that the <span>
+                        << /span><span>script</span><span>></span> tag should be inside the <span>
+                                << /span><span>head</span><span>></span>
+                                    section):<br><br>
+                                    <br>
+                                    <span>
+                                        << /span><span>head</span><span>></span><br>
+                                            <span>
+                                            </span>
+                                            <<span>script
+                                    </span><span>></span><span>src</span><span>"jquery-3.6.1.min.js"</span><span>
+                                        <span>
+                                            << /span><span>/script</span><span>></span><br>
+                                                <span>
+                                                    <span>
+                                                        << /span><span>/head</span><span>></span><br>
+                                                            Tip: Place the downloaded file in the same directory <br>
+                                                            as the pages where you wish to use it. <br>
+                                                            jQuery CDN <br>
+                                                            If you don't want to download and host jQuery <br>
+                                                            yourself, you can include it from a CDN (Content <br>
+                                                            Delivery Network). <br>
+
+                                                            Google is an example of someone who host jQuery: <br>
+
+                                                            Google CDN: <br>
+
+                                                            <$ head> <br>
+                                                                <$ script
+                                                                    src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js">
+                                                                    <span>
+                                                                        <$< /span> <span> /script</span> >
+                                                                            <br>
+                                                                            <span>
+                                                                                <$ /head</span><span>></span>
+        </div>
+        <div id="Syntax">
+
+            <h1-h1>jQuery Syntax</h1-h1>
+            With jQuery you select (query) HTML elements and perform "actions" on them. <br> <br>
+
+            jQuery Syntax<br> <br>
+            The jQuery syntax is tailor-made for selecting HTML elements and performing some action on the
+            element(s).<br> <br>
+
+            Basic syntax is: $(selector).action()<br> <br>
+
+            A $ sign to define/access jQuery <br>
+            A (selector) to "query (or find)" HTML elements <br>
+            A jQuery action() to be performed on the element(s)<br> <br>
+            Examples:
+
+            $(this).hide() - hides the current element. <br>
+
+            $("p").hide() - hides all <$p> elements. <br>
+
+                $(".test").hide() - hides all elements with class="test". <br>
+
+                $("#test").hide() - hides the element with id="test". <br> <br>
+
+                Are you familiar with CSS selectors? <br> <br>
+
+                jQuery uses CSS syntax to select elements. You will learn more about the selector syntax in the next
+                chapter of this tutorial.<br> <br>
+
+                Tip: If you don't know CSS, you can read our CSS Tutorial.<br> <br>
+
+                The Document Ready Event <br>
+                You might have noticed that all jQuery methods in our examples, are inside a document ready event:<br>
+                <br>
+
+                $(document).ready(function(){ <br>
+
+                // jQuery methods go here... <br>
+
+                });<br> <br>
+                This is to prevent any jQuery code from running before the document is finished loading (is ready). <br>
+                <br>
+
+                It is good practice to wait for the document to be fully loaded and ready before working with it. This
+                also allows you to have your JavaScript code before the body of your document, in the head section.
+                <br> <br>
+                Here are some examples of actions that can fail if methods are run before the document is fully loaded:
+                <br> <br>
+                Trying to hide an element that is not created yet <br>
+                Trying to get the size of an image that is not loaded yet <br>
+                Tip: The jQuery team has also created an even shorter method for the document ready event: <br> <br>
+
+                $(function(){<br>
+
+                // jQuery methods go here... <br>
+
+                }); <br>
+                Use the syntax you prefer. We think that the document ready event is easier to understand when reading
+                the code. <br>
+        </div>
+        <div id="HideShow">
+            <h1-h1> jQuery Effects - Hide and Show</h1-h1>
+            Hide, Show, Toggle, Slide, Fade, and Animate. WOW!
+
+
+
+
+            Examples
+            jQuery hide()
+            Demonstrates a simple jQuery hide() method.
+
+            jQuery hide()
+            Another hide() demonstration. How to hide parts of text.
+
+            jQuery hide() and show()
+            With jQuery, you can hide and show HTML elements with the hide() and show() methods:
+
+            Example <br>
+            <p id="pa">
+                $("#hide").click(function(){ <br>
+                $("#p").hide(); <br>
+                }); <br>
+                $("#show").click(function(){ <br>
+                $("p").show(); <br>
+                });<br>
+                Syntax: <br>
+
+                $(selector).hide(speed,callback);<br>
+
+                $(selector).show(speed,callback);<br>
+            </p> <br>
+            <button id="hide">hide</button> <button id="show">show</button> <br>
+
+            The optional speed parameter specifies the speed of the hiding/showing, and can take the following values:
+            "slow", "fast", or milliseconds.
+            <br><br>
+            The optional callback parameter is a function to be executed after the hide() or show() method completes
+            (you will learn more about callback functions in a later chapter).
+            <br><br>
+            The following example demonstrates the speed parameter with hide():
+            <br><br>
+            Example <br>
+            <p class="hide1000">
+                $("button").click(function(){<br>
+                $("p").hide(1000);<br>
+                });<br>
+                ADVERTISEMENT <br>
+
+            </p>
+            <button id="hide1000">hide1000</button> <button id="show1000">show1000</button> <br>
+
+            jQuery toggle() <br>
+            You can also toggle between hiding and showing an element with the toggle() method.
+            <br><br>
+            Shown elements are hidden and hidden elements are shown:
+            <br><br>
+            <p class="toggle">
+                Example <br>
+                $("button").click(function(){ <br>
+                $("p").toggle();<br>
+                }); <br>
+                Syntax:</p> <br>
+            <button id="toggle">toggle</button> <br>
+            $(selector).toggle(speed,callback);<br>
+            The optional speed parameter can take the following values: "slow", "fast", or milliseconds.<br><br>
+
+            The optional callback parameter is a function to be executed after toggle() completes.<br><br>
+        </div>
+        <div id="Fading">
+            <h1-h1>jQuery Effects - Fading</h1-h1>
+            With jQuery you can fade elements in and out of visibility.
+
+
+            <pre>
+
+            Examples
+            jQuery fadeIn()
+            Demonstrates the jQuery fadeIn() method.
+
+            jQuery fadeOut()
+            Demonstrates the jQuery fadeOut() method.
+
+            jQuery fadeToggle()
+            Demonstrates the jQuery fadeToggle() method.
+
+            jQuery fadeTo()
+            Demonstrates the jQuery fadeTo() method.
+
+            jQuery Fading Methods
+            With jQuery you can fade an element in and out of visibility.
+
+            jQuery has the following fade methods:
+
+            fadeIn()
+            fadeOut()
+            fadeToggle()
+            fadeTo()
+            jQuery fadeIn() Method
+            The jQuery fadeIn() method is used to fade in a hidden element.
+
+            Syntax:
+
+            $(selector).fadeIn(speed,callback);
+            The optional speed parameter specifies the duration of the effect. It can take the following values: "slow",
+            "fast", or milliseconds.
+
+            The optional callback parameter is a function to be executed after the fading completes.
+
+            The following example demonstrates the fadeIn() method with different parameters:
+
+            Example
+            $("#fadein").click(function(){
+            $(".testfadein").fadeIn();
+            $(".testfadein2").fadeIn("slow");
+            $(".testfadein3").fadeIn(3000);
+            });
+            <p class="testfadein">Lorem ipsum dolor sit amet.</p>
+            <p class="testfadein2">Lorem ipsum dolor sit amet.</p>
+            <p class="testfadein3">Lorem ipsum dolor sit amet.</p>
+            <button id="fadein">fade in</button> <button id="fadeout">fade out</button>
+            
+        </pre>
+        </div>
+        <div id="Sliding">
+            <pre>
+           <h1-h1>jQuery Effects - Sliding</h1-h1> 
+The jQuery slide methods slide elements up and down.
+
+
+Examples
+jQuery slideDown()
+Demonstrates the jQuery slideDown() method.
+
+jQuery slideUp()
+Demonstrates the jQuery slideUp() method.
+
+jQuery slideToggle()
+Demonstrates the jQuery slideToggle() method.
+
+jQuery Sliding Methods
+With jQuery you can create a sliding effect on elements.
+
+jQuery has the following slide methods:
+
+slideDown()
+slideUp()
+slideToggle()
+jQuery slideDown() Method
+The jQuery slideDown() method is used to slide down an element.
+
+Syntax:
+
+$(selector).slideDown(speed,callback);
+The optional speed parameter specifies the duration of the effect. It can take the following values: "slow", "fast", or milliseconds.
+
+The optional callback parameter is a function to be executed after the sliding completes.
+
+The following example demonstrates the slideDown() method:
+
+Example
+$("#flip").click(function(){
+  $("#panel").slideDown();
+});
+
+<div id="flip">Click to slide down panel</div>
+<div id="panel">Hello world!</div>
+</pre>
+        </div>
+        <div id="Animation">
+            <pre>
+             <h1-h1>jQuery Effects - Animation</h1-h1>   
+With jQuery, you can create custom animations.
+
+
+
+jQuery
+jQuery Animations - The animate() Method
+The jQuery animate() method is used to create custom animations.
+
+Syntax:
+
+$(selector).animate({params},speed,callback);
+The required params parameter defines the CSS properties to be animated.
+
+The optional speed parameter specifies the duration of the effect. It can take the following values: "slow", "fast", or milliseconds.
+
+The optional callback parameter is a function to be executed after the animation completes.
+
+The following example demonstrates a simple use of the animate() method; it moves a <div> element to the right, until it has reached a left property of 250px:
+
+Example
+$("button").click(function(){
+  $("div").animate({left: '250px'});
+}); 
+<button id="nimation">Start Animation</button>
+
+<p>By default, all HTML elements have a static position, and cannot be moved. To manipulate the position, remember to first set the CSS position property of the element to relative, fixed, or absolute!</p>
+
+<div class ="nimation" style="background:#98bf21;height:100px;width:100px;position:absolute;"></div>
+By default, all HTML elements have a static position, and cannot be moved.
+To manipulate the position, remember to first set the CSS position property of the element to relative, fixed, or absolute!
+
+ADVERTISEMENT
+
+jQuery animate() - Manipulate Multiple Properties
+Notice that multiple properties can be animated at the same time:
+
+Example
+$("button").click(function(){
+  $("div").animate({
+    left: '250px',
+    opacity: '0.5',
+    height: '150px',
+    width: '150px'
+  });
+}); 
+
+
+
+
+            </pre>
+        </div>
+        <div id="Stop">
+            <pre>
+             <h1-h1>jQuery Stop Animations</h1-h1>   
+The jQuery stop() method is used to stop animations or effects before it is finished.
+
+ 
+
+Click to slide down/up the panel
+
+Because time is valuable, we deliver quick and easy learning.
+
+At W3Schools, you can study everything you need to learn, in an accessible and handy format.
+
+Examples
+jQuery stop() sliding
+Demonstrates the jQuery stop() method.
+
+jQuery stop() animation (with parameters)
+Demonstrates the jQuery stop() method.
+
+jQuery stop() Method
+The jQuery stop() method is used to stop an animation or effect before it is finished.
+
+The stop() method works for all jQuery effect functions, including sliding, fading and custom animations.
+<button id="ani">Start Animation</button><button id="anistop">stop Animation</button>
+
+
+<p>By default, all HTML elements have a static position, and cannot be moved. To manipulate the position, remember to first set the CSS position property of the element to relative, fixed, or absolute!</p>
+
+<div class="ani" style="background:#98bf21;height:100px;width:100px;position:absolute;"></div>
+
+Syntax:
+
+$(selector).stop(stopAll,goToEnd);
+The optional stopAll parameter specifies whether also the animation queue should be cleared or not.
+ Default is false, which means that only the active animation will be stopped, 
+ allowing any queued animations to be performed afterwards.
+
+The optional goToEnd parameter specifies whether or not to complete the current animation immediately.
+ Default is false.
+
+So, by default, the stop() method kills the current animation being performed on the selected element.
+
+The following example demonstrates the stop() method, with no parameters:
+
+Example
+$("#stop").click(function(){
+  $("#panel").stop();
+});
+<a href="https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_stop_slide"><button>tru it</button></a>
+
+            </pre>
+        </div>
+        <div id="remove">
+            <p id="removeElement" style="height: 60px; background-color: #98bf21;">
+                Lorem ipsum dolor sit amet, consectetur adipisicing 
+                elit. Dignissimos a, nam non nulla, pariatur exercitationem 
+                labore velit ipsum aspernatur hic atque dolores laboriosam tenetur esse natus enim aliquam ipsam autem!
+
+            </p>
+            <button id="removebtn">remove</button> 
+                       <p id="removeElement2" style="height: 60px; background-color: #98bf21;">
+                Lorem ipsum dolor sit amet, consectetur adipisicing 
+                elit. Dignissimos a, nam non nulla, pariatur exercitationem 
+                labore velit ipsum aspernatur hic atque dolores laboriosam tenetur esse natus enim aliquam ipsam autem!
+
+            </p>
+            <button id="removebtn2">empty</button>
+        </div>
+        <iframe id="iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13655.617144174852!2d31.451144950000003!3d31.16793105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f77a7753978a47%3A0xfcfdfb8e954b42c2!2z2KjYt9ix2KnYjCDZhdix2YPYsiDYt9mE2K7Yp9iMINin2YTYr9mC2YfZhNmK2Kk!5e0!3m2!1sar!2seg!4v1670792016328!5m2!1sar!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</body>
+<script src="./index.js"></script>
+
+</html>
